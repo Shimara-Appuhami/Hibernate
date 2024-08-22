@@ -16,7 +16,7 @@ class Main {
 //        student.setId(1);
 //        student.setName(fullName);
 //        student.setAddress("Kandy");
-        Transaction transaction=session.beginTransaction();
+//        Transaction transaction=session.beginTransaction();
 
 //        session.save(student);
         // session.update(student);
@@ -45,6 +45,7 @@ class Main {
         teacher.setT_id("t_1");
         teacher.setName(fullName);
         teacher.setExperience("2 Years");
+        Transaction transaction=session.beginTransaction();
 //        session.save(teacher);
 //          session.update(teacher);
 //          session.delete(teacher);
