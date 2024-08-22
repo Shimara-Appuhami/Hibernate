@@ -45,7 +45,13 @@ class Main {
         teacher.setT_id("t_1");
         teacher.setName(fullName);
         teacher.setExperience("2 Years");
-        session.save(teacher);
+//        session.save(teacher);
+//          session.update(teacher);
+//          session.delete(teacher);
+          session.get(Teacher.class,"t_1");
+          System.out.println("ID: " + teacher.getT_id());
+          System.out.println("Name: " + teacher.getName());
+          System.out.println("Experience: " + teacher.getExperience());
 
 
 
